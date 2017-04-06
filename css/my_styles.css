@@ -1,0 +1,234 @@
+/********************************
+           BASE STYLES
+********************************/
+
+p {
+    padding: 10px;
+}
+
+.container {
+    padding: 0 0;
+}
+
+.morphext > .animated {
+    display: inline-block;
+}
+
+/********************************
+           SECTION ONE
+********************************/
+
+.paraHeader {
+    margin: 75px auto;
+    text-align: center;
+    padding: 15px 15px;
+    width: 300px;
+}
+
+.secondHeader {
+    padding: 35px;
+}
+
+
+
+
+#cameraRoll {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)) 0% 0% / cover, url('../img/camera-roll.jpeg') center center fixed;
+    padding: 80px 0px;
+    margin-top: -29px;
+    width: 100%;
+}
+
+
+
+/********************************
+           SECTION TWO
+********************************/
+
+#sectionTwo {
+    padding: 10px 20px;
+    margin-top: -15px;
+    background: #f7f7f7;
+}
+
+.cameraFixTwo,
+.cameraFix {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+i.cameraSize {
+   font-size: 175px;
+   text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.4);
+   
+}
+
+
+
+/********************************
+            BUTTONS
+********************************/
+
+.btn-default {
+    background-color: rgba(255,255,255,.5);
+    border: 1px solid rgba(0,0,0,.2);
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 1s;
+    transition: all 0.5s;
+}
+
+.btn-default:hover {
+    color: black;
+    background-color: rgba(255,255,255,1);
+    border: 1px solid rgba(0,0,0,.6);
+    border-radius: 50%;
+}
+
+.btn-default:visited {
+    border-radius: 10px;
+    background-color: white;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+
+/********************************
+           JUMBOTRON
+********************************/
+
+.bg img {
+    width: 100%;
+    }
+.bannerText {
+    margin-top: -145px;
+    color: white;
+    text-shadow: 2px 7px 10px rgba(2,0,0,0.8);
+}
+
+
+
+
+
+/********************************
+           NAVIGATION
+********************************/
+
+#nav.affix {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index:10;
+    }
+
+.navbar-form input, .form-inline input {
+	width: auto;
+}
+
+.nav>li>a {
+    padding-left: 25px;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: white;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: antiquewhite;
+}
+
+.navbar-custom {
+ margin-bottom: 0;
+ text-transform: uppercase;
+ font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+ 
+
+.navbar-toggle {
+    margin-right: 20px;
+}
+
+.navbar-default {
+  background-color:rgba(0,0,0,0.8);
+  border: none;
+   }
+
+
+
+/********************************
+          MEDIA QUERIES
+********************************/
+
+@media (min-width: 320px){
+    
+}
+
+@media (min-width: 400px) {
+   
+    
+}
+
+@media (min-width: 768px){
+    
+    
+    .navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    }
+
+    .navbar .navbar-collapse {
+    text-align: center;
+    }
+    .nav>li>a {
+        padding: 14px 45px; 
+       
+    }
+    .navbar {
+        height: 15px;
+    }
+    #cameraRoll {
+        padding: 130px 0;
+    }
+    .bannerText span {
+    position: fixed;
+    font-size: 2.5em;
+    top: 200px;
+    left: 235px;
+
+}
+
+}
+
+@media (min-width: 992px) {
+   
+    
+
+@media (min-width: 1200px) {
+    .page-scroll {
+    margin-top: -150px;
+    }
+    .bg img {
+        height: 640px;
+
+    }
+    .banner {
+        height: 640px;
+    }
+    
+    
+   
+    
+    
+}
+    
+/********************************
+             TEST
+********************************/    
+    
+   
+    
+    
+    
+    
+    
