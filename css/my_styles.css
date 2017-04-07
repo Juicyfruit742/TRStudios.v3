@@ -69,7 +69,7 @@ i.cameraSize {
 
 #cameraReel {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)) 0% 0% / cover, url('../img/bannerThree.jpg') center center fixed;
-    padding: 100px 0px;
+    padding: 80px 0px;
     width: 100%;
 }
 
@@ -116,15 +116,17 @@ i.cameraSize {
     background-size: cover;
 }   
 
-
+.morphOverlay {
+    margin-top: 100px;
+}
 
 .morphOverlay h3 {
-    color: #E9967A;
+    color: #FF8247;
     font-size: 2.5em;
     }
 
 .morphOverlay span {
-    color: #E9967A;
+    color: #FF8247;
 }
 
 .logo {
@@ -139,7 +141,7 @@ i.cameraSize {
     width: 375px;
     margin: 0 auto;
     padding: 15px;
-    border-radius: 5px;
+    border-radius: 20px;
 }
 
 /********************************
@@ -202,6 +204,26 @@ i.cameraSize {
 
 @media (min-width: 768px){
     
+    .morphOverlay {
+    margin-top: 100px;
+    }
+    
+    .morphOverlay h3 {
+    font-size: 5em;
+    }
+
+    .logo {
+        margin-top: 55px;
+    
+    }   
+
+    .logo h1 {
+    font-size: 4em;
+    width: 700px;
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 20px;
+    }
     
     .navbar .navbar-nav {
     display: inline-block;
@@ -218,15 +240,14 @@ i.cameraSize {
     .navbar {
         height: 15px;
     }
+    
+    #cameraReel,
     #cameraRoll {
         padding: 130px 0;
     }
     #hero {
         height: 100vh;
         }
-    .morphOverlay h3 {
-        font-size: 3em;
-    }
 
 }
 
@@ -236,13 +257,18 @@ i.cameraSize {
 
 @media (min-width: 1200px) {
     .page-scroll {
-    margin-top: 290px;
+    margin-top: 150px;
     }
     #hero {
         height: 100vh;
         }
-    .morphOverlay h3 {
-        font-size: 3.75em;
+    
+    .morphOverlay {
+      margin-top: 50px;
+}
+    .logo h1 {
+        font-size: 5em;
+        width: 900px;
     }
     
    

@@ -20,24 +20,17 @@ $(document).on('click', 'a[href^="#"]', function(e) {
 });
 
 // button focus fix
-
 $(".btn").mouseup(function(){
     $(this).blur();
 })
 
 // affix browser sizing
-
 var $attribute = $('[data-smart-affix]');
 $attribute.each(function(){
   $(this).affix({
     offset: {
       top: $(this).offset().top,
     }
-  })
-})
-$(window).on("resize", function(){
-  $attribute.each(function(){
-    $(this).data('bs.affix').options.offset = $(this).offset().top
   })
 })
 
@@ -55,4 +48,8 @@ $("#js-rotating").Morphext({
     }
 });
 
-
+$('.parent-container').magnificPopup({
+  delegate: 'a', // child items selector, by clicking on it popup will open
+  type: 'image'
+  // other options
+});
