@@ -73,31 +73,25 @@ video {
 }
 
 .infoBlockOne,
-.infoBlockTwo,
-.infoBlockThree{
+.infoBlockTwo {
     color: black;
-    height: 220px;
+    height: 150px;
     
 }
 
 .infoBlockTwo {
-    background: #3CB371;
-    color: white;
+    background: white;
+    color: black;
 }
 
 
 .infoBlockOne p,
-.infoBlockTwo p,
-.infoBlockThree p {
-    font-size: 1.2em;
-    padding: 45px 35px 25px 35px;
-
-
-
+.infoBlockTwo p  {
+    padding: 25px 10px;
 }
 
 .infoBanner h1 {
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
 
