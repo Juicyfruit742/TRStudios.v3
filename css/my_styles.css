@@ -44,56 +44,53 @@ video {
 
     }
 
-.infoBanner,
-.welcomeBanner {
+#infoBanner,
+#welcomeBanner {
+    display: table;
     background: #181919;
     color: #fff;
-    height: 350px;
-
+    height: 60vh;
+    width: 100%;
 }
 
-.welcomeBanner h1,
-.welcomeBanner h2 {
-    padding: 45px 15px;
+#infoBanner {
+    height: 40vh;
+}
+
+.infoContainer,
+.welcomeContainer {
+    display: table-cell;
     margin: 0;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
 }
 
-.welcomeBanner h1 {
-    font-size: 4em;
-}
-
-
-.paraHeader {
-    margin: 0;
-
-}
 
 .mainHeader {
     padding: 20px;
 }
 
-.infoBlockOne,
-.infoBlockTwo {
+.infoBlockOne {
     color: black;
-    height: 150px;
     
 }
 
-.infoBlockTwo {
-    background: white;
-    color: black;
+.infoBlockOne {
+    background: #3CB371;
+    text-align: left;
+    color: white;
 }
 
 
-.infoBlockOne p,
-.infoBlockTwo p  {
-    padding: 25px 10px;
+.infoBlockOne p {
+    padding: 55px 25px;
+    font-size: 1.5em;
 }
 
-.infoBanner h1 {
-    font-size: 2em;
+.infoContainer h1 {
+    padding-bottom: 55px;
 }
-
 
 #cameraRoll {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)) 0% 0% / cover, url('../img/camera-roll.jpeg') center center;
@@ -112,19 +109,6 @@ video {
 #sectionTwo {
     margin-top: -15px;
     }
-
-
-.cameraFixTwo,
-.cameraFix {
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
-
-i.cameraSize {
-   font-size: 175px;
-   text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.4);
-   
-}
 
 #cameraReel {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)) 0% 0% / cover, url('../img/bannerThree.jpg') center center;
@@ -151,6 +135,12 @@ i.cameraSize {
     -webkit-box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.2);
     box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.2);
     border-radius: 35px;
+    font-family: "Montserrat Alternates", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 2em;
+}
+
+.btn-success:hover {
+    background-color: #3CB371;
 }
 
 .btn-default {
@@ -182,37 +172,32 @@ i.cameraSize {
            JUMBOTRON
 ********************************/
 
-#hero .hero-container {
+#hero {
     display: table;
     width: 100%;
-    height: 70vh;
+    height: 100vh;
     background: url(../img/bannerOne.jpeg) top center;
     background-size: cover;
 }   
 
-.morphOverlay {
-    margin-top: 100px;
+.hero-container {
+    display: table-cell;
+    background: rgba(0, 0, 0, 0.6);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
 }
 
 .morphOverlay h3 {
     color: #FF8247;
-    font-size: 2.5em;
     }
 
 .logo {
     color: white;
-    margin-top: 55px;
     
 }
 
-.logo h1 {
-    font-size: 2.5em;
-    background-color: rgba(0,0,0,.5);
-    width: 375px;
-    margin: 0 auto;
-    padding: 15px;
-    border-radius: 20px;
-}
 
 /********************************
            NAVIGATION
@@ -272,53 +257,20 @@ i.cameraSize {
           MEDIA QUERIES
 ********************************/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (min-width: 768px){
     
     .infoPicture video,
     .infoPicture img {
-        width: 100%;
         height: 300px;
 
     }
-    
-    #sectionOne .container-fluid {
-        width: 100%;
-    }
-    
-    .morphOverlay {
-    margin-top: 100px;
-    }
-    
-    .morphOverlay h3 {
-    font-size: 5em;
-    }
 
-    .logo {
-        margin-top: 55px;
-    
-    }   
+    .morphOverlay h3 {
+    font-size: 4em;
+    } 
 
     .logo h1 {
-    font-size: 4em;
-    width: 700px;
-    margin: 0 auto;
-    padding: 15px;
-    border-radius: 20px;
+    font-size: 5em;
     }
     
     .navbar .navbar-nav {
@@ -341,129 +293,65 @@ i.cameraSize {
     #cameraRoll {
         padding: 130px 0;
     }
-    #hero .hero-container {
-        height: 100vh;
+    #hero {
         background-attachment: fixed;
         }
-    .infoBlockOne,
-    .infoBlockTwo,
-    .infoBlockThree {
-        height: 240px;
-        padding: 65px 45px;
+    
+    .infoBlockOne p {
+        padding: 55px;
+        font-size: 2em;
     }
     
-    .infoBlockOne p,
-    .infoBlockTwo p,
-    .infoBlockThree p {
-    font-size: 1.30em;
-    padding: 0;
-
-}
-
+    .welcomeContainer h1 {
+        font-size: 4em;
+    }
+    
+    #infoBanner {
+        margin-top: -5px;
+    }
+    
 }
 
 @media (min-width: 992px) {
     
-    
-    
-    .infoBlockOne,
-    .infoBlockTwo,
-    .infoBlockThree {
-        height: 300px;
-        padding: 25px 15px;
-    }
-    
-    .infoBlockOne p,
-    .infoBlockTwo p,
-    .infoBlockThree p {
-    font-size: 1.50em;
-
-}
-    .infoBanner {
+    .infoContainer {
         margin-top: -5px;
     }
     
-    .welcomeBanner {
-        height: 600px;
+    .welcomeContainer h2 {
+        padding-top: 25px;
     }
     
-    .welcomeBanner span{
-        padding: 35px;
+    .welcomeContainer h1 {
+        font-size: 5em;
     }
-    
-    .welcomeBanner h1 {
-        padding-top: 145px;
-    }
-  
-    
 
+
+    
 @media (min-width: 1200px) {
     
-    .mainHeader {
-        margin: 25px 0;
+    
+    .infoPicture video,
+    .infoPicture img {
+        height: 375px;
+
+    }
+    
+    .infoBlockOne p {
+        padding: 75px 200px;
     }
     
     .page-scroll {
-    margin-top: 200px;
+    padding-top: 55px;
     }
-    #hero {
-        height: 100vh;
-        }
     
-    .morphOverlay {
-      margin-top: 50px;
-}
     .logo h1 {
         font-size: 5em;
-        width: 900px;
     }
-    .infoContainer {
-    margin-top: 25px;
-    margin-bottom: 45px;
-}
-
-    #sectionOne .container {
-        width: 90%;
-    }
+    
 
     
-    .infoBlockOne,
-    .infoBlockThree{
-    background: #3CB371;
-    color: white;
-    padding: 45px 15px;
-    margin: 0 auto;
-    border-radius: none;
-    }
 
-    
-    .infoBlockTwo {
-        background: none;
-        color: black;
-        padding: 45px 15px;
-        margin: 0 auto;
-        border-radius: none;
-    }
-    
-    .infoBlockThree:hover,
-    .infoBlockOne:hover {
-    background: #3CB371;
-}
-
-}
-    
-    @media (min-width: 1600px) {
-        
-        .infoBlockOne,
-        .infoBlockTwo,
-        .infoBlockThree {
-            padding: 65px 35px;
-        }
-        
-        
-    }
-    
-    
     
     
     
