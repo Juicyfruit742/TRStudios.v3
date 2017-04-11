@@ -2,41 +2,108 @@
            BASE STYLES
 ********************************/
 
-p {
-    padding: 10px;
+
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    padding-right: 0;
+    padding-left: 0;
 }
+
 
 .container {
     padding: 0 0;
+    -webkit-backface-visibility: hidden;
+}
+
+.container-fluid {
+    -webkit-backface-visibility: hidden;
 }
 
 .morphext > .animated {
     display: inline-block;
+    
 }
+
+h1, h2, h3, h4, h5, p {
+    font-family: "Montserrat Alternates", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+video {
+    object-fit: inherit;
+}
+
 
 /********************************
            SECTION ONE
 ********************************/
 
+.infoPicture img {
+        width: 100%;
+        height: 300px;
+
+    }
+
+.infoBanner,
+.welcomeBanner {
+    background: #181919;
+    color: #fff;
+    height: 350px;
+
+}
+
+.welcomeBanner h1,
+.welcomeBanner h2 {
+    padding: 45px 15px;
+    margin: 0;
+}
+
+.welcomeBanner h1 {
+    font-size: 4em;
+}
+
+
 .paraHeader {
-    margin: 75px auto;
-    text-align: center;
-    padding: 15px 15px;
-    width: 300px;
+    margin: 0;
+
 }
 
-.secondHeader {
-    padding: 35px;
+.mainHeader {
+    padding: 20px;
+}
+
+.infoBlockOne,
+.infoBlockTwo,
+.infoBlockThree{
+    color: black;
+    padding: 45px 35px;
+    height: 220px;
+    
+}
+
+.infoBlockTwo {
+    background: #3CB371;
+    color: white;
 }
 
 
+.infoBlockOne p,
+.infoBlockTwo p,
+.infoBlockThree p {
+    font-size: 1.2em;
+
+
+}
+
+.infoBanner h1 {
+    font-size: 1.5em;
+}
 
 
 #cameraRoll {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)) 0% 0% / cover, url('../img/camera-roll.jpeg') center center fixed;
-    padding: 80px 0px;
-    margin-top: -29px;
+    padding: 80px 0;
     width: 100%;
+
 }
 
 
@@ -46,10 +113,9 @@ p {
 ********************************/
 
 #sectionTwo {
-    padding: 10px 20px;
     margin-top: -15px;
-    background: #f7f7f7;
-}
+    }
+
 
 .cameraFixTwo,
 .cameraFix {
@@ -78,6 +144,15 @@ i.cameraSize {
 /********************************
             BUTTONS
 ********************************/
+
+.btn-success {
+    color: #181919;
+    background-color: #fff;
+    border-color: #989b9b;
+    -webkit-box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 35px;
+}
 
 .btn-default {
     background-color: rgba(255,255,255,.5);
@@ -148,6 +223,10 @@ i.cameraSize {
            NAVIGATION
 ********************************/
 
+.navbar {
+     -webkit-backface-visibility: hidden;
+}
+
 #nav.affix {
     position: fixed;
     top: 0;
@@ -163,6 +242,7 @@ i.cameraSize {
     padding-left: 25px;
 }
 
+.navbar-default .navbar-nav>li>a:focus,
 .navbar-default .navbar-nav>li>a {
     color: white;
 }
@@ -171,10 +251,14 @@ i.cameraSize {
     color: antiquewhite;
 }
 
+.navbar-default .navbar-nav>li>a:visited {
+    color: grey;
+}
+
 .navbar-custom {
  margin-bottom: 0;
  text-transform: uppercase;
- font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+ font-family: "Montserrat Alternates", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
  
 
@@ -194,15 +278,27 @@ i.cameraSize {
 ********************************/
 
 @media (min-width: 320px){
-    
+   
+}
 }
 
 @media (min-width: 400px) {
-   
+    
     
 }
 
 @media (min-width: 768px){
+    
+    .infoPicture video,
+    .infoPicture img {
+        width: 100%;
+        height: 300px;
+
+    }
+    
+    #sectionOne .container-fluid {
+        width: 100%;
+    }
     
     .morphOverlay {
     margin-top: 100px;
@@ -248,16 +344,66 @@ i.cameraSize {
     #hero {
         height: 100vh;
         }
+    .infoBlockOne,
+    .infoBlockTwo,
+    .infoBlockThree {
+        height: 240px;
+        padding: 65px 45px;
+    }
+    
+    .infoBlockOne p,
+    .infoBlockTwo p,
+    .infoBlockThree p {
+    font-size: 1.30em;
+    padding: 0;
+
+}
 
 }
 
 @media (min-width: 992px) {
-   
+    
+    
+    
+    .infoBlockOne,
+    .infoBlockTwo,
+    .infoBlockThree {
+        height: 300px;
+        padding: 25px 15px;
+    }
+    
+    .infoBlockOne p,
+    .infoBlockTwo p,
+    .infoBlockThree p {
+    font-size: 1.50em;
+
+}
+    .infoBanner {
+        margin-top: -5px;
+    }
+    
+    .welcomeBanner {
+        height: 600px;
+    }
+    
+    .welcomeBanner span{
+        padding: 35px;
+    }
+    
+    .welcomeBanner h1 {
+        padding-top: 145px;
+    }
+  
     
 
 @media (min-width: 1200px) {
+    
+    .mainHeader {
+        margin: 25px 0;
+    }
+    
     .page-scroll {
-    margin-top: 150px;
+    margin-top: 200px;
     }
     #hero {
         height: 100vh;
@@ -270,11 +416,58 @@ i.cameraSize {
         font-size: 5em;
         width: 900px;
     }
-    
-   
-    
-    
+    .infoContainer {
+    margin-top: 25px;
+    margin-bottom: 45px;
 }
+
+    #sectionOne .container {
+        width: 90%;
+    }
+
+    
+    .infoBlockOne,
+    .infoBlockThree{
+    background: #3CB371;
+    color: white;
+    padding: 45px 15px;
+    margin: 0 auto;
+    border-radius: none;
+    }
+
+    
+    .infoBlockTwo {
+        background: none;
+        color: black;
+        padding: 45px 15px;
+        margin: 0 auto;
+        border-radius: none;
+    }
+    
+    .infoBlockThree:hover,
+    .infoBlockOne:hover {
+    background: #3CB371;
+}
+
+}
+    
+    @media (min-width: 1600px) {
+        
+        .infoBlockOne,
+        .infoBlockTwo,
+        .infoBlockThree {
+            padding: 65px 35px;
+        }
+        
+        
+    }
+    
+    
+    
+    
+    
+
+    
     
 /********************************
              TEST
