@@ -135,6 +135,9 @@ i.cameraSize {
 
 #cameraReel {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)) 0% 0% / cover, url('../img/bannerThree.jpg') center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     padding: 80px 0px;
     width: 100%;
 }
@@ -277,6 +280,7 @@ i.cameraSize {
           MEDIA QUERIES
 ********************************/
 
+/*
 @media (min-width: 320px){
    
 }
@@ -286,6 +290,7 @@ i.cameraSize {
     
     
 }
+*/
 
 @media (min-width: 768px){
     
