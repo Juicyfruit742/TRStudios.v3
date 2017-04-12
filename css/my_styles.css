@@ -54,7 +54,7 @@ video {
 }
 
 #infoBanner {
-    height: 40vh;
+    height: 50vh;
 }
 
 .infoContainer,
@@ -77,9 +77,11 @@ video {
 }
 
 .infoBlockOne {
-    background: #3CB371;
+    background: none;
     text-align: left;
-    color: white;
+    color: black;
+    opacity: 0.6;
+    filter: alpha(opacity=50);
 }
 
 
@@ -92,6 +94,10 @@ video {
     padding-bottom: 55px;
 }
 
+.infoContainer button {
+    margin-bottom: 25px;
+}
+
 #cameraRoll {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)) 0% 0% / cover, url('../img/camera-roll.jpeg') center center;
     background-attachment: fixed;
@@ -102,13 +108,83 @@ video {
 
 
 
+
 /********************************
            SECTION TWO
 ********************************/
 
 #sectionTwo {
     margin-top: -15px;
+    padding-bottom: 65px;
     }
+
+#aboutBanner {
+    display: table;
+    background: white;
+    color: #FF8247;
+    height: 50vh;
+    width: 100%;
+}
+
+.aboutContainer {
+    display: table-cell;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.aboutContainer h1 {
+    border-bottom: 1px solid #FF8247;
+    margin: 0 65px;
+    padding-bottom: 15px;
+
+}
+
+.about-header h3 {
+    padding-bottom: 20px;
+}
+
+#cameraLense {
+    margin: 0 15px;
+    margin-bottom: 35px;
+    opacity: 40%;
+}
+
+#cameraLense img {
+    width: 80%;
+    border-radius: 100%;
+    opacity: 0.7;
+    filter: alpha(opacity=50);
+}
+
+#cameraLense p {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 35px;
+}
+
+#articleContainer {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.aboutInfo h4 {
+    padding-top: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid black;
+    margin: 0 85px;
+    font-weight: bold;
+
+}
+
+.aboutInfo p {
+    padding: 45px;
+    text-align: left;
+    opacity: 0.8;
+    filter: alpha(opacity=50);
+}
 
 #cameraReel {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)) 0% 0% / cover, url('../img/bannerThree.jpg') center center;
@@ -116,6 +192,30 @@ video {
     padding: 80px 0px;
     width: 100%;
 }
+
+#client-container {
+    padding: 35px;
+    opacity: 0.8;
+    filter: alpha(opacity=50);
+}
+
+.client-qoute blockquote p {
+    padding-top: 25px;
+}
+
+.client-header {
+    text-align: center;
+    padding: 55px 0;
+}
+
+.client-img img {
+    border-radius: 75%;
+    width: 30%;
+}
+
+
+
+
 
 /********************************
            SECTION THREE
@@ -137,11 +237,16 @@ video {
     border-radius: 35px;
     font-family: "Montserrat Alternates", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 2em;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 1s;
+    transition: all .5s;
+    opacity: 0.8;
+    filter: alpha(opacity=50);
 }
 
 .btn-success:hover {
     background-color: #3CB371;
-}
+    }
 
 .btn-default {
     background-color: rgba(255,255,255,.5);
@@ -296,9 +401,10 @@ video {
     #hero {
         background-attachment: fixed;
         }
+
     
     .infoBlockOne p {
-        padding: 55px;
+        padding: 45px;
         font-size: 2em;
     }
     
@@ -310,6 +416,22 @@ video {
         margin-top: -5px;
     }
     
+    .aboutContainer h1 {
+        margin: 0 95px;
+        padding-bottom: 45px;
+    }
+    
+    #cameraLense {
+        margin: 0 95px;
+    }
+    #cameraLense img {
+        width: 70%;
+    }
+    
+    #articleContainer {
+        margin-top: 65px;
+        width: 100%;
+    }
 }
 
 @media (min-width: 992px) {
@@ -318,14 +440,54 @@ video {
         margin-top: -5px;
     }
     
-    .welcomeContainer h2 {
+    .welcomeContainer h3 {
         padding-top: 25px;
+        font-size: 2.5em;
     }
     
     .welcomeContainer h1 {
         font-size: 5em;
     }
-
+    
+    .infoBlockOne h1 {
+      padding-top: 45px;
+      font-size: 3em;
+      padding-bottom: 15px;
+      border-bottom: 1px solid black;
+      margin: 0 65px
+    }
+    
+    .aboutContainer h1 {
+        margin: 0 125px;
+        font-size: 4em;
+    }
+    
+    #articleContainer {
+        width: 80%;
+        margin-top: 45px;
+    }
+    
+ 
+    #cameraLense {
+        margin: 0 95px;
+    }
+    #cameraLense img {
+        width: 50%;
+    }
+    
+    #cameraLense p {
+        width: 50%;
+    }
+    
+    #client-container {
+    width: 80%;
+    margin: 0 auto;
+    }
+    
+    .client-content {
+        padding: 15px;
+    }
+}
 
     
 @media (min-width: 1200px) {
@@ -337,9 +499,13 @@ video {
 
     }
     
+    .infoBlockOne h1 {
+        margin: 0 145px;
+    }
+    
     .infoBlockOne p {
         padding: 75px 200px;
-    }
+        }
     
     .page-scroll {
     padding-top: 55px;
@@ -349,6 +515,9 @@ video {
         font-size: 5em;
     }
     
+    .aboutContainer h1 {
+        margin: 0 200px;
+    }
 
     
 
