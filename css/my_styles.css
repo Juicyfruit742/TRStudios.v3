@@ -16,6 +16,7 @@
 
 .container-fluid {
     -webkit-backface-visibility: hidden;
+    padding: 0 0;
 }
 
 .morphext > .animated {
@@ -29,7 +30,7 @@ h1, h2, h3, h4, h5, p {
 
 
 video {
-    object-fit: inherit;
+    object-fit: fill;
 }
 
 
@@ -41,6 +42,7 @@ video {
 .infoPicture img {
         width: 100%;
         height: 300px;
+        
 
     }
 
@@ -90,7 +92,12 @@ video {
     font-size: 1.5em;
 }
 
-.infoContainer h1 {
+.infoContainer {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.infoContainer h2 {
     padding-bottom: 55px;
 }
 
@@ -115,7 +122,7 @@ video {
 
 #sectionTwo {
     margin-top: -15px;
-    padding-bottom: 65px;
+    padding-bottom: 165px;
     }
 
 #aboutBanner {
@@ -173,8 +180,8 @@ video {
 .aboutInfo h4 {
     padding-top: 25px;
     padding-bottom: 15px;
-    border-bottom: 1px solid black;
-    margin: 0 85px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    margin: 0 55px;
     font-weight: bold;
 
 }
@@ -213,7 +220,30 @@ video {
     width: 30%;
 }
 
+#team-container {
+    margin: 0 auto;
+    width: 80%;
+}
 
+.team-header {
+    opacity: 0.8;
+    filter: alpha(opacity=50);
+    padding: 45px;
+    text-align: center;
+}
+
+.team-content {
+    padding: 35px 0;
+}
+
+.team-job h3 {
+    opacity: 0.8;
+    filter: alpha(opacity=50);
+}
+
+.team-img img {
+    border-radius: 25px;
+}
 
 
 
@@ -221,6 +251,30 @@ video {
            SECTION THREE
 ********************************/
 
+#portfolioBanner {
+    display: table;
+    background: url(../img/workHard.jpg) top center;
+    color: white;
+    height: 75vh;
+    background-size: cover;
+    width: 100%;
+}
+
+
+.portfolioContainer {
+    display: table-cell;
+    margin: 0;
+    padding: 0;
+    background: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    vertical-align: middle;
+}
+
+.portfolio-content {
+    border: 10px solid rgba(255, 255, 255, 0.3);
+    margin: 10px;
+    padding: 195px 0;
+    }
 
 
 
@@ -236,7 +290,7 @@ video {
     box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.2);
     border-radius: 35px;
     font-family: "Montserrat Alternates", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 2em;
+    font-size: 1.75em;
     -webkit-transition: all 0.5s;
     -moz-transition: all 1s;
     transition: all .5s;
@@ -270,6 +324,10 @@ video {
 
 .btn:focus {
   outline: none;
+}
+
+.aboutButton {
+    margin-top: 35px;
 }
 
 
@@ -337,7 +395,7 @@ video {
 }
 
 .navbar-default .navbar-nav>li>a:visited {
-    color: grey;
+    color: none;
 }
 
 .navbar-custom {
@@ -366,7 +424,7 @@ video {
     
     .infoPicture video,
     .infoPicture img {
-        height: 300px;
+        height: 275px;
 
     }
 
@@ -416,13 +474,9 @@ video {
         margin-top: -5px;
         height: 60vh
     }
-    
+    #aboutBanner,
     #welcomeBanner {
-        height: 60vh;
-    }
-    
-    #aboutBanner {
-        height: 60vh;
+        height: 70vh;
     }
     
     .aboutContainer h1 {
@@ -449,12 +503,20 @@ video {
         margin-top: -5px;
     }
     
+    .infoContainer h2 {
+        font-size: 3em;
+    }
+    
     .welcomeContainer h3 {
         padding-top: 25px;
         font-size: 2.5em;
     }
     
     .welcomeContainer h1 {
+        font-size: 5em;
+    }
+    
+    .portfolio-content h1 {
         font-size: 5em;
     }
     
@@ -496,6 +558,11 @@ video {
     .client-content {
         padding: 15px;
     }
+    
+    .team-content {
+        padding: 65px 0;
+    }
+
 }
 
     
@@ -527,9 +594,20 @@ video {
     .aboutContainer h1 {
         margin: 0 200px;
     }
-
     
-
+    .aboutInfo h4 {
+        margin: 0 105px;
+    }
+    
+    .team-content .team-img img {
+        float: left;
+    }
+    
+    .team-job {
+        padding-top: 45px;
+    }
+    
+}
     
     
     
